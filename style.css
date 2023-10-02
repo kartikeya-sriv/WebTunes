@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 15px;
+}
+
+.brand img{
+    width: 50px;
+    padding: 0 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin:10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('bg.jpg');
+}
+.bottom{
+    position:sticky;
+    bottom:0;
+    height: 90px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    margin: 12px 0;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.songItemContainer{
+    margin-top: 30px;
+}
+.songItem img{
+    width:50px;
+    border-radius: 30px;
+    margin: auto 10px;
+}
+.timestamp{
+    margin: 0 10px;
+    cursor:default;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left:10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
